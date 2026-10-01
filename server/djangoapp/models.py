@@ -16,8 +16,9 @@ class CarMake(models.Model):
     description = models.TextField()
 
     def __str__(self):
-        return  "name: " + self.name + "\n" + "description: " + self.description
-    
+        return f"name: {self.name}\ndescription: {self.description}"
+
+
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
 # - Many-To-One relationship to Car Make model (One Car Make has many
 # Car Models, using ForeignKey field)
@@ -41,7 +42,14 @@ class CarModel(models.Model):
     car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     type = models.CharField(max_length=10, choices=TYPE_CHOICES)
-    year = models.IntegerField(validators=[MinValueValidator(2015), MaxValueValidator(2023)])
+    year = models.IntegerField(
+        validators=[MinValueValidator(2015), MaxValueValidator(2023)]
+    )
 
     def __str__(self):
-        return "name: " + self.name + "\n" + "type: " + self.type + "\n" + "year: " + str(self.year) + "\n" + "car make: " + str(self.car_make)
+        return (
+            f"name: {self.name}\n"
+            f"type: {self.type}\n"
+            f"year: {self.year}\n"
+            f"car make: {self.car_make}"
+        )
