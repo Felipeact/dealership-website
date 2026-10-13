@@ -1,0 +1,20 @@
+/*
+ * Tailwind v4 + HeroUI v3 entry for the HeroUI-based pages (currently Home).
+ * Compiled by `npm run build:css` into home.generated.css, because CRA's
+ * PostCSS config can't run Tailwind v4 directly.
+ */
+@import "tailwindcss" source(none);
+@import "@heroui/styles";
+
+@source "../components/Home";
+
+:root {
+  /* Deep teal: a nod to the original darkturquoise brand, with AA contrast on white text. */
+  --accent: oklch(0.52 0.1 200);
+  --accent-foreground: oklch(0.99 0 0);
+}
+
+.dark {
+  --accent: oklch(0.72 0.11 195);
+  --accent-foreground: oklch(0.2 0.02 200);
+}

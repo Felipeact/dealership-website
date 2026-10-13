@@ -26,7 +26,7 @@ urlpatterns = [
     path('djangoapp/', include('djangoapp.urls')),
 
     path('', TemplateView.as_view(
-        template_name="Home.html")),
+        template_name="index.html")),
 
     path('about/', TemplateView.as_view(
         template_name="About.html")),
@@ -37,7 +37,7 @@ urlpatterns = [
     path('login/', TemplateView.as_view(
         template_name="index.html")),
     path('logout/', TemplateView.as_view(
-        template_name="Home.html")),
+        template_name="index.html")),
 
     path('register/', TemplateView.as_view(
         template_name="index.html")),

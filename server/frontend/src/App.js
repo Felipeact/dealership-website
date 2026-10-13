@@ -1,22 +1,27 @@
-import LoginPanel from "./components/Login/Login"
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import Register from "./components/Register/Register";
-import Dealers from "./components/Dealers/Dealers";
-import Dealer from "./components/Dealers/Dealer"
-import PostReview from "./components/Dealers/PostReview"
 
-
+// Routes are lazy so each page only loads its own CSS: Home uses Tailwind/HeroUI,
+// the rest still use Bootstrap, and the two must not land on the same page.
+const Home = lazy(() => import("./components/Home/Home"));
+const LoginPanel = lazy(() => import("./components/Login/Login"));
+const Register = lazy(() => import("./components/Register/Register"));
+const Dealers = lazy(() => import("./components/Dealers/Dealers"));
+const Dealer = lazy(() => import("./components/Dealers/Dealer"));
+const PostReview = lazy(() => import("./components/Dealers/PostReview"));
 
 function App() {
   return (
-    <Routes>
-      <Route path="/login" element={<LoginPanel />} />
-      <Route path="/register" element={<Register />} />  
-      <Route path="/dealers" element={<Dealers />} /> 
-      <Route path="/dealers/:id" element={<Dealer />} />
-      <Route path="/postreview/:id" element={<PostReview/>} />
-
-    </Routes>
+    <Suspense fallback={null}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginPanel />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dealers" element={<Dealers />} />
+        <Route path="/dealer/:id" element={<Dealer />} />
+        <Route path="/postreview/:id" element={<PostReview/>} />
+      </Routes>
+    </Suspense>
   );
 }
 export default App;
