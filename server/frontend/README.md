@@ -50,10 +50,6 @@ Then run Django from `server/` (`python manage.py runserver`) and open http://lo
 
 Tailwind is compiled by the Tailwind CLI, not by CRA. `src/styles/tailwind.css` is the input and `src/styles/home.generated.css` is the output, which is git-ignored. `npm start` and `npm run build` compile it first through their `pre` scripts.
 
-### Car images
-
-The home page photos live in `src/assets/cars/`, one file per slot: `hero`, `suv`, `sedan`, `hatchback`, `coupe` and `pickup` (`.jpg`, `.png` or `.webp`). Any file with a matching name is picked up on the next build. Slots without an image fall back to a placeholder in `CarImage.jsx`.
-
 ## Project structure
 
 ```
@@ -63,7 +59,6 @@ frontend/
 └── src/
     ├── App.js           # Routes
     ├── index.js         # Entry point, wraps App in BrowserRouter
-    ├── assets/cars/     # Home page car photos
     ├── styles/          # Tailwind input (and generated output)
     └── components/
         ├── Home/        # Landing page (HeroUI + Tailwind)
