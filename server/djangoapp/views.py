@@ -41,13 +41,28 @@ def logout_request(request):
     return JsonResponse({"username": ""})
 
 
+def _field(data, *names):
+    """First non-empty value among the accepted spellings of a field."""
+    for name in names:
+        if data.get(name):
+            return data[name]
+    return None
+
+
 def registration(request):
-    data = json.loads(request.body)
-    username = data["username"]
-    password = data["password"]
-    first_name = data["firstname"]
-    last_name = data["lastname"]
-    email = data['email']
+    try:
+        data = json.loads(request.body)
+    except ValueError:
+        data = {}
+    username = _field(data, "userName", "username")
+    password = _field(data, "password")
+    first_name = _field(data, "firstName", "firstname") or ""
+    last_name = _field(data, "lastName", "lastname") or ""
+    email = _field(data, "email") or ""
+
+    if not username or not password:
+        return JsonResponse(
+            {"error": "Username and password are required"}, status=400)
 
     try:
         User.objects.get(username=username)
