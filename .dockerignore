@@ -1,0 +1,9 @@
+.git
+.claude
+.agents
+.github
+.impeccable
+**/node_modules
+server/frontend/build
+server/db.sqlite3
+**/__pycache__

@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The React single-page app for the dealership site. It is built into static files that the Django server serves; it has no server of its own in production.
 
-## Available Scripts
+## Stack
 
-In the project directory, you can run:
+- React 19 with React Router 6
+- [HeroUI](https://heroui.com) v3 and Tailwind CSS v4 on the home page
+- Bootstrap and plain CSS on the other pages
+- Create React App (`react-scripts`) for the dev server and build
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Route | Component | Description |
+| --- | --- | --- |
+| `/` | `components/Home/Home.jsx` | Landing page: hero, body-style tabs, featured dealers |
+| `/login` | `components/Login/Login.jsx` | Sign in |
+| `/register` | `components/Register/Register.jsx` | Create an account |
+| `/dealers` | `components/Dealers/Dealers.jsx` | Dealership list with a state filter |
+| `/dealer/:id` | `components/Dealers/Dealer.jsx` | One dealership and its reviews |
+| `/postreview/:id` | `components/Dealers/PostReview.jsx` | Review form (signed-in users) |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+`/about` and `/contact` are static HTML pages in `static/`, served by Django directly.
 
-### `npm test`
+Django only sends `index.html` for paths listed in `server/djangoproj/urls.py`, so every route above needs a matching entry there. When you add or rename a route, update both files and any links to it; otherwise the page loads blank or returns a 404.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Every route is lazy-loaded in `src/App.js`. This keeps each page's CSS separate: the home page uses Tailwind and HeroUI, the other pages use Bootstrap, and the two style sheets conflict if loaded together.
 
-### `npm run build`
+## Getting started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Then run Django from `server/` (`python manage.py runserver`) and open http://localhost:8000. Django serves `build/index.html` for the app routes and handles the `/djangoapp/*` API calls on the same origin.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm start` runs the CRA dev server on http://localhost:3000 with hot reload. That is fine for working on layout, but the dev server has no proxy to Django, so API calls (dealers, login, reviews) fail there.
 
-### `npm run eject`
+## Scripts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Command | What it does |
+| --- | --- |
+| `npm run build` | Compiles Tailwind CSS, then builds the app into `build/` |
+| `npm start` | Compiles Tailwind CSS, then starts the dev server |
+| `npm run watch:css` | Rebuilds Tailwind CSS on change; run alongside `npm start` while editing the home page |
+| `npm test` | Runs tests with Jest and React Testing Library |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Tailwind CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tailwind is compiled by the Tailwind CLI, not by CRA. `src/styles/tailwind.css` is the input and `src/styles/home.generated.css` is the output, which is git-ignored. `npm start` and `npm run build` compile it first through their `pre` scripts.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project structure
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+frontend/
+├── public/              # index.html template, favicon, manifest
+├── static/              # About and Contact pages, served by Django
+└── src/
+    ├── App.js           # Routes
+    ├── index.js         # Entry point, wraps App in BrowserRouter
+    ├── styles/          # Tailwind input (and generated output)
+    └── components/
+        ├── Home/        # Landing page (HeroUI + Tailwind)
+        ├── Header/      # Nav bar for the Bootstrap pages
+        ├── Login/
+        ├── Register/
+        ├── Dealers/     # Dealer list, dealer detail, post review
+        └── assets/      # Bootstrap, shared CSS, icons
+```

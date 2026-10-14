@@ -16,7 +16,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from django.views.generic import TemplateView
+from django.views.generic import RedirectView, TemplateView
 from django.conf.urls.static import static
 from django.conf import settings
 
@@ -25,8 +25,14 @@ urlpatterns = [
 
     path('djangoapp/', include('djangoapp.urls')),
 
+    # The React build asks for these at the root; they live under /static/.
+    path('manifest.json', RedirectView.as_view(
+        url='/static/manifest.json', permanent=True)),
+    path('favicon.ico', RedirectView.as_view(
+        url='/static/favicon.ico', permanent=True)),
+
     path('', TemplateView.as_view(
-        template_name="Home.html")),
+        template_name="index.html")),
 
     path('about/', TemplateView.as_view(
         template_name="About.html")),
@@ -37,7 +43,7 @@ urlpatterns = [
     path('login/', TemplateView.as_view(
         template_name="index.html")),
     path('logout/', TemplateView.as_view(
-        template_name="Home.html")),
+        template_name="index.html")),
 
     path('register/', TemplateView.as_view(
         template_name="index.html")),

@@ -1,0 +1,7 @@
+.claude
+.agents
+.impeccable
+.github
+node_modules
+server/frontend/build
+server/db.sqlite3
