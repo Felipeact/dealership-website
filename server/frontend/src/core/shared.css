@@ -1,0 +1,72 @@
+/* Structure the theme and the shared pages agree on: resets, the accessibility utilities and layout skeletons of the
+   shared x- pages. The theme supplies colour, type, material and shape on top of this. */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+img, svg { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.x-skip {
+  position: fixed; left: 12px; top: -80px; z-index: 100; padding: 10px 16px; background: #fff; color: #000;
+  font-weight: 600; border-radius: 8px; text-decoration: none;
+}
+.x-skip:focus { top: 12px; }
+
+.x-page { position: relative; z-index: 1; width: min(100% - 2rem, 72rem); margin-inline: auto; }
+@media (min-width: 640px) { .x-page { width: min(100% - 3rem, 72rem); } }
+
+/* aria-disabled buttons stay focusable mid-request. */
+[aria-disabled="true"] { cursor: progress; opacity: 0.7; }
+
+.x-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+.x-filters { display: grid; gap: 0.75rem 1rem; grid-template-columns: 1fr; align-items: end; }
+@media (min-width: 640px) { .x-filters { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto; } }
+.x-count { margin: 0; }
+.x-field { display: grid; gap: 0.4rem; min-width: 0; }
+.x-form { display: grid; gap: 1.25rem; max-width: 34rem; }
+.x-form--wide { max-width: 44rem; }
+.x-form-row { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+.x-input, .x-select, .x-textarea { width: 100%; min-width: 0; }
+.x-textarea { resize: vertical; }
+.x-error, .x-hint { margin: 0; font-size: 0.875rem; }
+.x-tone { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; }
+.x-tone-out { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
+
+.x-mark { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 700; }
+.x-mark-shape { flex: none; fill: currentColor; }
+.x-mark-score { font-variant-numeric: tabular-nums; font-weight: 500; }
+
+.x-balance { margin: 0 0 2rem; }
+.x-balance-bar { display: flex; height: 0.9rem; overflow: hidden; }
+.x-balance-key { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; list-style: none; margin: 0.75rem 0 0; padding: 0; }
+.x-balance-key li { display: inline-flex; align-items: center; gap: 0.5rem; }
+.x-balance-pct { font-variant-numeric: tabular-nums; opacity: 0.75; }
+
+.x-reviews, .x-dealers, .x-links, .x-skeleton { list-style: none; margin: 0; padding: 0; }
+.x-dealer-link, .x-dealer-review, .x-linkcard { text-decoration: none; color: inherit; }
+.x-dealer-link { display: grid; }
+.x-links { display: grid; gap: 1rem; }
+.x-linkcard { display: grid; gap: 0.25rem; }
+.x-prose { display: grid; gap: 2rem; max-width: 46rem; }
+.x-prose p { margin: 0; max-width: 65ch; }
+.x-note { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+.x-note p { margin: 0; max-width: 60ch; }
+.x-review-text { margin: 0; }
+.x-review-text p { margin: 0; max-width: 70ch; }
+.x-review-by { display: grid; gap: 0.1rem; margin: 0; }
+.x-crumb a { color: inherit; }
+
+@keyframes x-pulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.75; } }
+.x-skeleton li { animation: x-pulse 1.4s ease-in-out infinite; animation-delay: calc(var(--i, 0) * 120ms); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+

@@ -1,268 +1,224 @@
 ---
 name: Dealerships
-description: A dealer review site that shows its working parts.
+description: Dealer reviews read off a matte-black aircraft instrument panel, where every number comes from a live service.
 colors:
-  engine-teal: "oklch(0.52 0.1 200)"
-  engine-teal-night: "oklch(0.72 0.11 195)"
-  engine-teal-ink: "oklch(0.45 0.1 200)"
-  bay-ink: "oklch(0.2 0.03 220)"
-  instrument-panel: "oklch(0.24 0.03 220)"
-  instrument-well: "oklch(0.19 0.03 220)"
-  reading-positive: "oklch(0.84 0.14 155)"
-  reading-neutral: "oklch(0.88 0.03 220)"
-  reading-negative: "oklch(0.8 0.13 25)"
-  reading-positive-ink: "oklch(0.42 0.11 155)"
-  reading-neutral-ink: "oklch(0.4 0.02 220)"
-  reading-negative-ink: "oklch(0.45 0.15 25)"
-  fault-red: "oklch(0.7 0.17 25)"
-  fault-ink: "oklch(0.85 0.08 25)"
-  page-ground: "oklch(0.972 0.004 210)"
-  page-ink: "oklch(0.21 0.012 225)"
-  muted-ink: "oklch(0.49 0.012 220)"
-  surface: "oklch(1 0 0)"
-  separator: "oklch(0.915 0.006 210)"
+  ground: "oklch(0.13 0.008 250)"
+  panel: "oklch(0.175 0.01 250)"
+  face: "oklch(0.1 0.006 250)"
+  bezel: "oklch(0.22 0.01 250)"
+  line: "oklch(0.34 0.012 250)"
+  text: "oklch(0.95 0.005 250)"
+  muted: "oklch(0.74 0.01 250)"
+  placeholder: "oklch(0.6 0.01 250)"
+  radium: "oklch(0.88 0.2 150)"
+  radium-hover: "oklch(0.93 0.18 150)"
+  amber: "oklch(0.83 0.16 80)"
+  red: "oklch(0.72 0.2 28)"
 typography:
   display:
-    fontFamily: "Archivo Variable, -apple-system, Segoe UI, Roboto, sans-serif"
-    fontSize: "3rem"
-    fontWeight: 600
+    fontFamily: "B612, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(2.1rem, 4.4vw, 3.4rem)"
+    fontWeight: 700
     lineHeight: 1.1
-    letterSpacing: "-0.025em"
-    fontVariation: "\"wdth\" 112.5"
+    letterSpacing: "-0.02em"
   headline:
-    fontFamily: "Archivo Variable, -apple-system, Segoe UI, Roboto, sans-serif"
-    fontSize: "2.25rem"
-    fontWeight: 600
+    fontFamily: "B612, Segoe UI, system-ui, sans-serif"
+    fontSize: "clamp(1.5rem, 3.2vw, 2.1rem)"
+    fontWeight: 700
     lineHeight: 1.15
-    letterSpacing: "-0.025em"
-    fontVariation: "\"wdth\" 112.5"
+    letterSpacing: "-0.015em"
   title:
-    fontFamily: "Archivo Variable, -apple-system, Segoe UI, Roboto, sans-serif"
-    fontSize: "1.125rem"
-    fontWeight: 600
-    lineHeight: 1.4
-    letterSpacing: "-0.025em"
+    fontFamily: "B612, Segoe UI, system-ui, sans-serif"
+    fontSize: "1.3rem"
+    fontWeight: 700
+    lineHeight: 1.2
   body:
-    fontFamily: "Archivo Variable, -apple-system, Segoe UI, Roboto, sans-serif"
+    fontFamily: "B612, Segoe UI, system-ui, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.6
+  label:
+    fontFamily: "B612 Mono, ui-monospace, Consolas, monospace"
+    fontSize: "0.72rem"
+    fontWeight: 700
+    lineHeight: 1.2
+    letterSpacing: "0.14em"
   readout:
-    fontFamily: "Martian Mono Variable, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-    fontSize: "0.75rem"
-    fontWeight: 350
-    lineHeight: 1.5
-    fontFeature: "\"tnum\""
-    fontVariation: "\"wdth\" 75"
+    fontFamily: "B612 Mono, ui-monospace, Consolas, monospace"
+    fontSize: "1.15rem"
+    fontWeight: 700
+    lineHeight: 1.2
 rounded:
-  control: "0.5rem"
-  field: "0.75rem"
-  panel: "1rem"
-  band: "1.5rem"
-  pill: "9999px"
+  sm: "4px"
+  md: "6px"
+  panel: "14px"
+  pill: "99px"
 spacing:
-  gutter: "1rem"
-  gutter-wide: "1.5rem"
-  container: "72rem"
-  section: "5rem"
+  xs: "0.5rem"
+  sm: "0.75rem"
+  md: "1.25rem"
+  lg: "2.5rem"
+  section: "3.5rem"
 components:
   button-primary:
-    backgroundColor: "{colors.engine-teal}"
-    textColor: "{colors.surface}"
-    rounded: "{rounded.pill}"
-    height: "2.5rem"
-  button-primary-on-dark:
-    backgroundColor: "{colors.engine-teal-night}"
-    textColor: "{colors.bay-ink}"
-    rounded: "{rounded.pill}"
-    height: "2.5rem"
-  button-outline-on-dark:
-    textColor: "{colors.surface}"
-    rounded: "{rounded.pill}"
-    height: "2.5rem"
-  instrument:
-    backgroundColor: "{colors.instrument-panel}"
-    textColor: "{colors.surface}"
+    backgroundColor: "{colors.radium}"
+    textColor: "{colors.face}"
+    rounded: "{rounded.sm}"
+    padding: "0 1.4rem"
+    height: "2.9rem"
+  button-primary-hover:
+    backgroundColor: "{colors.radium-hover}"
+  button-ghost:
+    backgroundColor: "transparent"
+    textColor: "{colors.text}"
+    rounded: "{rounded.sm}"
+    padding: "0 1.4rem"
+    height: "2.9rem"
+  input:
+    backgroundColor: "{colors.face}"
+    textColor: "{colors.text}"
+    rounded: "{rounded.sm}"
+    padding: "0.6rem 0.85rem"
+    height: "2.9rem"
+  panel:
+    backgroundColor: "{colors.panel}"
+    textColor: "{colors.text}"
     rounded: "{rounded.panel}"
-    padding: "28px"
-  instrument-field:
-    backgroundColor: "{colors.instrument-well}"
-    textColor: "{colors.surface}"
-    rounded: "{rounded.field}"
-    padding: "12px 16px"
-  example-chip:
-    textColor: "{colors.surface}"
-    rounded: "{rounded.pill}"
-    padding: "4px 12px"
+    padding: "1.75rem"
   review-card:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.page-ink}"
-    rounded: "{rounded.panel}"
-    padding: "24px"
-  cta-band:
-    backgroundColor: "{colors.engine-teal}"
-    textColor: "{colors.surface}"
-    rounded: "{rounded.band}"
-    padding: "48px 32px"
+    backgroundColor: "{colors.panel}"
+    textColor: "{colors.text}"
+    rounded: "{rounded.md}"
+    padding: "1.15rem 1.25rem"
+  chip:
+    backgroundColor: "transparent"
+    textColor: "{colors.muted}"
+    rounded: "{rounded.pill}"
+    padding: "0 0.85rem"
+    height: "2.2rem"
 ---
 
 # Design System: Dealerships
 
 ## Overview
 
-**Creative North Star: "The Open Engine Bay"**
+**Creative North Star: "The Night Flight Instrument Cluster"**
 
-The hood is up. Dealerships is a review site, but what sets it apart is the machinery underneath: four services, real routes, and a sentiment model reading every review. The visual system treats that machinery as something to show off, not hide. Calm, light pages carry the everyday reading and browsing. When the product shows the system working, it opens the bay: a dark blue-teal ground, an instrument panel, a live status strip, and monospaced readouts of routes, scores and timings that come from the live request.
+A matte-black cockpit panel at night. Markings are luminous white, the one lit accent is radium green, and amber and red lamps come on only when something deviates. Every number on the site is meant to be read off a live service, so the UI is built from dials with tick scales, hairline-ruled panels, and small mono uppercase placards, not from a generic grid of cards.
 
-Its tone is confident and factual. Every number on screen is measured or fetched, never claimed. Outages are named, with what the visitor loses and a way to check again. Known limits of the model are stated where they show up, not hidden. Motion is reserved for the request itself: a pulse travelling along a hop, and a result settling into place.
-
-Two typefaces carry the split between people and machine: Archivo, set slightly wide for display like an automotive spec sheet, and Martian Mono, condensed, for anything a machine produced.
+The density is calm and instrument-like: lots of black ground, thin lines instead of fills, light used as signal. Text is B612 (a cockpit-legibility face) for reading and B612 Mono for anything that is a reading, a label, or a path. The theme lives in `src/theme/theme.css` over the shared `x-` class contract in `src/core/shared.css`.
 
 **Key Characteristics:**
-- Light, quiet reading pages; a dark instrument wherever the system works in public.
-- One accent, Engine Teal, re-tuned per ground: Night Teal on dark, Teal Ink for text on light.
-- Archivo for people, Martian Mono for machine output: routes, scores, timings, counts.
-- Honest states: offline services, failed hops and stale results are named, with a way to recover.
-- Pill-shaped controls, softly rounded containers, no hard edges.
+- Dark only (`color-scheme: dark`), matte ground, no gradients on surfaces.
+- One lit accent (radium) plus two deviation lamps (amber, red).
+- Round SVG dials with major and minor ticks and damped needles.
+- Hairline borders define structure; fills stay within three near-black steps.
+- Mono uppercase placards for labels, buttons, nav, and status.
 
 ## Colors
 
-One teal accent on teal-tinted neutrals, a separate dark blue-teal family for instruments, and a sentiment scale that only appears as data, in a dark-ground and a light-ground variant.
+A near-black blue-tinted neutral ramp with a single phosphor-green accent and two signal lamps.
 
 ### Primary
-- **Engine Teal** (`engine-teal`): primary buttons, the closing CTA band, request arrows, focus rings and selected chips on light grounds. It's the only colour that asks to be clicked.
-- **Night Teal** (`engine-teal-night`): the same role inside the engine bay. Any dark section carries the `bay` class, which remaps the accent to Night Teal, so teal keeps about 7:1 contrast on dark.
-- **Teal Ink** (`engine-teal-ink`): teal used as text or links on light grounds, such as request labels in the sequence map and dealer links on review cards (6:1 or better).
+- **Radium Green** (`colors.radium`): the lit accent. Needles, primary button, active nav underline, focus ring, selected chip, positive sentiment, completed request hops, dealer place names.
 
 ### Secondary
-- **Bay Ink** (`bay-ink`): the dark ground of the hero, the open engine bay. Large sections only, never text. Also the browser `theme-color`.
-- **Instrument Panel** (`instrument-panel`): the raised panel that holds a live tool on Bay Ink.
-- **Instrument Well** (`instrument-well`): input fields recessed into an instrument panel.
-
-### Tertiary (sentiment readings)
-- **Readings on dark** (`reading-positive`, `reading-neutral`, `reading-negative`): the result label and meter marker inside an instrument.
-- **Readings on light** (`reading-positive-ink`, `reading-neutral-ink`, `reading-negative-ink`): the label and dot on review cards (8:1 or better on white).
-- **Fault Red** (`fault-red`): the dot and dashed line for a failed hop or offline service.
-- **Fault Ink** (`fault-ink`): error and validation text on dark grounds.
+- **Caution Amber** (`colors.amber`): a deviation lamp. Degraded service needle and readout, the caution banner and lamp, an active (in-flight) hop, stale or pending analyzer hints.
+- **Fault Red** (`colors.red`): fault and negative. Failed service needles, negative sentiment, form errors, over-limit counter, failed hops.
 
 ### Neutral
-- **Page Ground** (`page-ground`): the light page background, tinted faintly toward the brand hue.
-- **Page Ink** (`page-ink`): headings and body text on light grounds.
-- **Muted Ink** (`muted-ink`): secondary text. It measures 5.2:1 or better on every light surface.
-- **Surface** (`surface`): cards and fields on the light page, and white text on dark grounds.
-- **Separator** (`separator`): hairlines, lifelines, section borders.
+- **Night Ground** (`colors.ground`): page background and sticky header (94% alpha).
+- **Panel Black** (`colors.panel`): raised surfaces: instrument panel, review cards, filters, notes, lanes.
+- **Dial Face** (`colors.face`): the deepest tone: inputs, dial faces, text on the radium button.
+- **Bezel** (`colors.bezel`): dial bezel and hub only.
+- **Hairline** (`colors.line`): every border, divider, scrollbar thumb.
+- **Marking White** (`colors.text`): primary text, major ticks, neutral sentiment.
+- **Dim Marking** (`colors.muted`): secondary text, minor ticks, placards, ghost button border. **Placeholder Grey** (`colors.placeholder`) is for input placeholders.
 
 ### Named Rules
-**The One Voice Rule.** Teal is the only interactive colour. A teal element either acts or traces a live request.
+**The Lamp Rule.** Amber and red appear only when something deviates (caution, fault, negative, error). They are never decoration, and a healthy screen has none.
 
-**The Readings Are Data Rule.** Sentiment colours appear only next to a computed sentiment, never as decoration, status, section tint or brand accent. Service status uses teal (up) and Fault Red (down).
+**The One Lit Accent Rule.** Radium is the only chromatic color at rest. Anything glowing is radium, amber, or red, and it glows because it is a live signal.
 
-**The Ground Decides Rule.** Pick the accent variant from the ground: Night Teal in the bay, Teal Ink for text on light, Engine Teal for fills on light.
+**The Hairline Rule.** Structure comes from 1px `line` borders, not fills or heavy shadows. Sentiment cards add a 2px top rule in the sentiment color.
 
 ## Typography
 
-**Display Font:** Archivo Variable at 112.5% width (with system sans fallback)
-**Body Font:** Archivo Variable at normal width
-**Label/Mono Font:** Martian Mono Variable at 75% width, weight 350
+**Display / Body Font:** B612 (with Segoe UI, system-ui, sans-serif)
+**Label / Mono Font:** B612 Mono (with ui-monospace, Consolas, monospace)
 
-Both are self-hosted through Fontsource (`@fontsource-variable/archivo`, `@fontsource-variable/martian-mono`) and imported by the routes that use them.
-
-**Character:** A grotesque with an engineered, slightly wide stance for the reading voice, and a condensed technical mono for the machine's voice. People speak in Archivo; the system speaks in Martian Mono.
+**Character:** An aviation-designed sans for reading, its mono sibling for everything that is measured, labeled, or addressed. Fonts are self-hosted via Fontsource.
 
 ### Hierarchy
-- **Display** (600, 2.25rem → 3rem, 1.1, semi-expanded): the hero H1 only, `text-balance`.
-- **Headline** (600, 1.875rem → 2.25rem, ~1.15, semi-expanded): section headings and the CTA heading, `text-balance`.
-- **Title** (600, 1.125rem): panel headings and service names in the system map.
-- **Body** (400, 1rem; 1.125rem for hero and section intros): paragraphs, kept to 65ch.
-- **Readout** (350 mono, 0.75rem, condensed, tabular numerals): routes, scores, timings, counters, step numbers.
+- **Display** (700, clamp(2.1rem, 4.4vw, 3.4rem), 1.1, -0.02em): home H1 only. Inner page titles use 700, clamp(1.9rem, 4.5vw, 2.9rem), 1.1.
+- **Headline** (700, clamp(1.5rem, 3.2vw, 2.1rem), 1.15, max 26ch): home section headings.
+- **Title** (700, 1.3rem, 1.2): inner-page section headings; dealer names are 700 at 1.05rem.
+- **Body** (400, 1rem, 1.6): reading text; ledes at 1.05 to 1.1rem in muted, capped at 34 to 40rem or 60ch.
+- **Label** (B612 Mono 700, 0.72 to 0.76rem, 0.1 to 0.14em, uppercase): placards, field labels, nav, buttons, sentiment marks.
+- **Readout** (B612 Mono 700, 0.95 / 1.15 / 1.5rem for sm / default / lg dials, tabular numerals): dial values. Counts and scores use tabular-nums.
 
 ### Named Rules
-**The Machine Voice Rule.** Monospace is for things a machine produced or addresses: routes, payloads, scores, milliseconds. Never use it for headings, buttons or marketing copy.
-
-**The Spec Sheet Rule.** Display and headline type is semi-expanded (112.5%) with tight tracking (-0.025em). Hierarchy comes from size, width and weight, never from colour or gradient text.
+**The Mono-Is-A-Reading Rule.** Mono type is reserved for values, labels, buttons, nav, and paths. Prose is always B612 sans in sentence case.
 
 ## Layout
 
-There is a single centred container of 72rem with a 1rem gutter on phones and 1.5rem from `sm` up. Sections breathe vertically at 5–6rem.
-
-The hero is a three-part grid. On desktop, the copy sits centred in the left column, the status strip anchors to the bottom of that column, and the instrument spans both rows on the right (capped at 30rem). On mobile the order is copy → instrument → status strip, so the live result arrives sooner.
-
-The page reads as: engine-bay hero → sample reviews (light) → sequence map (secondary ground) → CTA band → footer.
-
-The system map lays four service lanes on an 8-track grid with no column gap, so each lifeline and header share a lane centre. Below `md` it becomes a numbered list with "From → To" and a written request/reply tag on each step.
-
-Breakpoints are Tailwind's defaults (`sm` 640, `md` 768, `lg` 1024). There's no horizontal scroll at 390px. On touch devices (`pointer: coarse`), chips and buttons grow to 44px tall.
+Single content column of `min(100% - 2rem, 76rem)` (`100% - 3rem` from 640px), centered. Home hero is a two-column grid at 1024px+ (5fr copy, 7fr instrument panel, 3.5rem gap) and stacks below. The six dials sit in a 3-column grid (2 columns under 520px, the large dial spanning both). Sections are separated by a hairline top border with 3.5rem vertical padding. Annunciator review cards go 3-up from 820px; request lanes auto-fit at 14rem minimum; the request-step list is a hairline-ruled table (2rem / 16rem / 1fr from 760px). The dealer list is ruled rows, not cards, with a link grid of 1.4fr / 9rem / 1.2fr from 760px. Inner pages use 2.5rem top and 5rem bottom padding. Header is sticky, 3.75rem tall; nav collapses to a burger below 720px. Touch targets are at least 2.5rem (2.75rem for chips on coarse pointers).
 
 ## Elevation & Depth
 
-The light pages are almost flat. Grouping comes from tonal layering (page ground, then secondary bands, then white surfaces) and 1px separators.
-
-Real depth belongs to the engine bay. An instrument panel lifts off Bay Ink with one long, soft, offset shadow tinted in the bay's hue, and its fields sit recessed in a darker well.
-
-### Shadow Vocabulary
-- **Instrument lift** (`box-shadow: 0 30px 60px -24px oklch(0.08 0.03 220 / 0.9)`): only under an instrument panel on a dark ground.
+Tonal layering plus light as signal. Depth is ground, then panel, then face (darkest, recessed), separated by hairlines. The only structural shadow is on the main instrument panel: a 1px inset top highlight and a soft deep drop (`inset 0 1px 0 oklch(1 0 0 / 0.06), 0 30px 60px -28px oklch(0 0 0 / 0.9)`). Glows are signal, not elevation: radium primary button (`0 0 22px -6px` radium at 65%), needles (`drop-shadow 3px`), lit sentiment bars and rules, hop lamps.
 
 ### Named Rules
-**The Lit Bay Rule.** Shadows that read as shadows exist only in the dark engine bay. Light pages get depth from tone and hairlines.
+**The Glow-Means-Live Rule.** A glow marks a live or lit element (needle, lamp, positive or negative marker, primary action). Never glow a passive surface.
 
 ## Shapes
 
-Controls are pills: buttons, example chips and status dots are fully round. Containers are softly rounded and grow with their size: fields 0.75rem, panels and review cards 1rem, full-width bands 1.5rem. Borders are 1px hairlines: white at 12–15% on dark, `separator` on light, dashed for empty states. There are no coloured side borders thicker than 1px, hard corners or offset block shadows.
+Mostly small, precise radii: 4px for buttons, inputs, and nav items; 6px for cards, notes, and the lane table; 14px for the main instrument panel; full pill only for chips; circles for dials, hub, and lamps. Borders are 1px hairline; notes use a dashed hairline. Review cards carry a short 3px lit tab on the left edge and a 2px top rule on annunciator cards, in white, radium, or red by sentiment.
 
 ## Components
 
 ### Buttons
-- **Shape:** pill (`rounded.pill`), large size on heroes and CTAs.
-- **Primary:** Engine Teal fill with white label on light grounds. Inside the bay it becomes Night Teal with a Bay Ink label. One filled primary per view region.
-- **Outline on dark:** white label, 40–60% white border, faint white wash on hover. Secondary actions on Bay Ink or teal, including the instrument's Analyze button.
-- **Secondary (on teal):** white fill with deep teal label (`oklch(0.25 0.05 200)`), inside the CTA band.
-- **Busy:** `aria-disabled` with reduced opacity and a progress cursor, never `disabled`, so keyboard focus stays put.
-
-### Chips
-- **Example chips:** 1px white/15% outline, xs label. Selected uses the teal border plus a 15% teal wash (`aria-pressed`). Focus is a white outline, distinct from selected. Each one is a one-tap preset, not a filter.
-
-### Cards / Containers
-- **Review card:** white surface, 1px separator border, `rounded.panel`, 24px padding. It holds the sentiment label (dot plus word in the light-ground reading colour) with a mono score, the quoted review, then the reviewer, car and a Teal Ink dealer link.
-- **Empty or failed state:** dashed separator border, one sentence naming the cause, and a "Try again" pill.
-- **CTA band:** Engine Teal, `rounded.band`, full container width; a product-specific heading, one sentence, a primary and an outline action.
+- **Shape:** 4px radius, 2.9rem minimum height, mono 700 0.8rem uppercase, 0.1em tracking.
+- **Primary:** radium fill, face-dark text, radium glow; hover lightens to the radium-hover tone and strengthens the glow.
+- **Ghost (default):** transparent, 1px muted border; hover shifts the border to marking white with a 5% white wash. Header "key" buttons are the same form at 0.74rem, with a lit variant (radium text, 60% radium border).
+- **Focus:** 2px radium outline, 3px offset.
 
 ### Inputs / Fields
-- **Instrument field:** Instrument Well fill, 1px white/15% border, `rounded.field`, 15px text with relaxed leading, teal caret, thin translucent scrollbar. Focus switches the border to teal and adds a soft teal ring.
-- **Validation:** runs on submit and shows a Fault Ink sentence under the field, wired up with `aria-describedby`. The control is never silently disabled.
+- **Style:** face-dark fill, 1px hairline border, 4px radius, 2.9rem minimum height, radium caret; labels are mono placards.
+- **Focus:** radium border plus a 3px radium ring at 25% alpha.
+- **Error:** red border and red mono message; disabled drops to 50% opacity.
+
+### Cards / Containers
+- **Panel and review card:** panel-black fill, 1px hairline, 6px radius (14px for the main panel), 1.15 to 1.75rem padding. Cards are used for reviews and link targets, not as a generic grid for dealers.
+- **Notes:** panel fill, dashed hairline; error tone uses red at 70%.
+
+### Chips
+- Pill, transparent, muted mono text, hairline border; pressed state is radium text and border over a 10% radium wash.
 
 ### Navigation
-- Sticky 64px bar, background at 85% with backdrop blur, wordmark "Dealerships" semi-expanded. Text links on desktop. Below `sm`, a 44px menu button (`aria-expanded`, closes on Escape) reveals Dealers, About us and Contact.
+- Mono uppercase 0.74rem links in muted; hover brightens with a panel wash; the current page is radium with a 2px inset underline. Wordmark "Dealerships" is B612 700 with a radium dial mark. Mobile uses a bordered burger and a full-width dropdown.
 
-### The Instrument (signature component)
-This is the reusable surface for showing the system working. Use it anywhere the product exposes a live mechanism. It has five parts, in order:
-1. **Header:** title plus a mono tag naming the engine (e.g. "NLTK VADER").
-2. **Input:** an Instrument field, presets as example chips, then a row with the mono character count, a "Ctrl ↵ to run" hint and the outline Analyze button.
-3. **Hop path:** dots joined by 1px lines, one per service the request touches, each labelled with name and mono route. States are idle (white 25%), active (teal ring with ping), done (teal fill), failed (Fault Red dot plus dashed line). While a request is in flight, a teal pulse travels each line (`hop`: 1.1s, staggered 550ms per hop).
-4. **Reading:** the result in its sentiment colour, a −1…+1 meter with the neutral band marked, and mono readouts in plain words ("score", "words: 35% positive · …", "Django → Flask 12 ms · round trip 40 ms"). It settles in with `reveal` (420ms, blur 4px → 0, rise 6px, expo-out). A result stays tied to the exact text it read. Edited text dims it with "Text edited · press Analyze to update", and a new request dims it while pending. Known model limits appear as a one-line note under the reading.
-5. **Failure:** a plain sentence naming which service didn't answer (or that the request timed out), plus "Try again", which hands focus to the result area.
+### Dial (signature)
+- Round SVG: bezel, dark face, minor ticks in muted, major ticks in white (thicker), mono scale numerals, a radium needle with tail and glow, a hub ring. The needle turns amber at `caution` and red at `fail`, with the readout recolored to match; a parked needle sits at 35% opacity without glow. Needles damp to value over 1.1s (`cubic-bezier(0.22, 1, 0.36, 1)`) and sweep in from 135deg on load with 80ms staggers, only when motion is allowed. Readout and sub-caption sit under the dial.
 
-Screen readers get one short live announcement per outcome. Under reduced motion every state stays and the travel and reveal are dropped.
-
-### Status Strip (signature component)
-One row per backend service (dot, name, mono timing or "offline"), fed by `/djangoapp/status`. When everything is up, a live sentence about the data follows. When something is down, a sentence names the service and what the visitor loses, with a "Check again" link. If Django itself is down, the other services read as unknown, not down.
-
-### Sequence Map (signature component)
-A service-lane diagram for explaining a request path. It has lane headers (name, mono tech, one-line role), hairline lifelines, teal solid arrows with Teal Ink labels for requests, and muted dashed arrows for replies, with mono labels and step numbers. Steps must mirror real code, in order, and example ids are labelled as examples.
+### Request hops and annunciators
+- Hops are small ring lamps in a mono row: done is radium and lit, active is amber and blinks in steps, failed is red. Annunciator review cards show a sentiment mark with a leading glowing shape and a score in muted mono.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** show live system output (routes, scores, ms) in the Readout mono with tabular numerals.
-- **Do** name the failing service, say what the visitor loses, and offer a retry. Never let a block silently disappear.
-- **Do** use the Instrument language (Bay Ink, `bay` class, Instrument Panel, hop path) whenever a page demonstrates a mechanism.
-- **Do** use `text-balance` and the semi-expanded width on every display and headline.
-- **Do** state a model's known limits where they show up.
-- **Do** label demonstration text as sample text; every number must come from the API.
+- **Do** keep the ground at `colors.ground`, raised surfaces at `colors.panel`, recessed inputs and dial faces at `colors.face`.
+- **Do** draw structure with 1px `colors.line` borders.
+- **Do** reserve radium for live or actionable signals, and amber or red for deviation only.
+- **Do** set values, labels, buttons, and nav in B612 Mono uppercase with tracking; set prose in B612.
+- **Do** source every displayed number from a live service and show a failure as a fault lamp or red needle, not a hidden dial.
+- **Do** respect reduced motion: the needle sweep is gated behind `prefers-reduced-motion: no-preference`.
+- **Do** keep touch targets at least 2.5rem.
 
 ### Don't:
-- **Don't** use sentiment colours outside a computed reading, including for service status.
-- **Don't** use monospace for headings, buttons, or anything a person says.
-- **Don't** add eyebrow chips or kickers above headings.
-- **Don't** use Engine Teal for text on light grounds (use Teal Ink) or on dark grounds (use Night Teal via `bay`).
-- **Don't** use stock car photos or placeholder silhouettes to fill space. A demonstration of the product beats a picture of a car.
-- **Don't** use gradient text, glass decoration, or hard offset shadows.
+- **Don't** use amber or red decoratively on a healthy screen.
+- **Don't** add a second lit accent hue; there is one radium.
+- **Don't** make passive surfaces glow or give cards drop shadows.
+- **Don't** introduce a light theme or gradient fills on surfaces.
+- **Don't** render dealers as a generic card grid; the list is ruled rows.
+- **Don't** show ratings, star scores, or invented figures; sentiment is computed text, per PRODUCT.md.

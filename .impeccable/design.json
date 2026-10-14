@@ -1,347 +1,253 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-14T17:28:50+00:00",
+  "generatedAt": "2026-10-14T21:54:59.367628+00:00",
   "title": "Design System: Dealerships",
   "extensions": {
     "colorMeta": {
-      "engine-teal": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Night Ground",
+        "canonical": "oklch(0.13 0.008 250)",
+        "tonalRamp": [
+          "oklch(15% 0.008 250)",
+          "oklch(25% 0.008 250)",
+          "oklch(35% 0.008 250)",
+          "oklch(45% 0.008 250)",
+          "oklch(55% 0.008 250)",
+          "oklch(65% 0.008 250)",
+          "oklch(80% 0.008 250)",
+          "oklch(95% 0.008 250)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Black",
+        "canonical": "oklch(0.175 0.01 250)",
+        "tonalRamp": [
+          "oklch(15% 0.01 250)",
+          "oklch(25% 0.01 250)",
+          "oklch(35% 0.01 250)",
+          "oklch(45% 0.01 250)",
+          "oklch(55% 0.01 250)",
+          "oklch(65% 0.01 250)",
+          "oklch(80% 0.01 250)",
+          "oklch(95% 0.01 250)"
+        ]
+      },
+      "face": {
+        "role": "neutral",
+        "displayName": "Dial Face",
+        "canonical": "oklch(0.1 0.006 250)",
+        "tonalRamp": [
+          "oklch(15% 0.006 250)",
+          "oklch(25% 0.006 250)",
+          "oklch(35% 0.006 250)",
+          "oklch(45% 0.006 250)",
+          "oklch(55% 0.006 250)",
+          "oklch(65% 0.006 250)",
+          "oklch(80% 0.006 250)",
+          "oklch(95% 0.006 250)"
+        ]
+      },
+      "bezel": {
+        "role": "neutral",
+        "displayName": "Bezel",
+        "canonical": "oklch(0.22 0.01 250)",
+        "tonalRamp": [
+          "oklch(15% 0.01 250)",
+          "oklch(25% 0.01 250)",
+          "oklch(35% 0.01 250)",
+          "oklch(45% 0.01 250)",
+          "oklch(55% 0.01 250)",
+          "oklch(65% 0.01 250)",
+          "oklch(80% 0.01 250)",
+          "oklch(95% 0.01 250)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.34 0.012 250)",
+        "tonalRamp": [
+          "oklch(15% 0.012 250)",
+          "oklch(25% 0.012 250)",
+          "oklch(35% 0.012 250)",
+          "oklch(45% 0.012 250)",
+          "oklch(55% 0.012 250)",
+          "oklch(65% 0.012 250)",
+          "oklch(80% 0.012 250)",
+          "oklch(95% 0.012 250)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Marking White",
+        "canonical": "oklch(0.95 0.005 250)",
+        "tonalRamp": [
+          "oklch(15% 0.005 250)",
+          "oklch(25% 0.005 250)",
+          "oklch(35% 0.005 250)",
+          "oklch(45% 0.005 250)",
+          "oklch(55% 0.005 250)",
+          "oklch(65% 0.005 250)",
+          "oklch(80% 0.005 250)",
+          "oklch(95% 0.005 250)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Dim Marking",
+        "canonical": "oklch(0.74 0.01 250)",
+        "tonalRamp": [
+          "oklch(15% 0.01 250)",
+          "oklch(25% 0.01 250)",
+          "oklch(35% 0.01 250)",
+          "oklch(45% 0.01 250)",
+          "oklch(55% 0.01 250)",
+          "oklch(65% 0.01 250)",
+          "oklch(80% 0.01 250)",
+          "oklch(95% 0.01 250)"
+        ]
+      },
+      "radium": {
         "role": "primary",
-        "displayName": "Engine Teal",
-        "canonical": "oklch(0.52 0.1 200)",
+        "displayName": "Radium Green",
+        "canonical": "oklch(0.88 0.2 150)",
         "tonalRamp": [
-          "oklch(0.150 0.1 200.0)",
-          "oklch(0.264 0.1 200.0)",
-          "oklch(0.379 0.1 200.0)",
-          "oklch(0.493 0.1 200.0)",
-          "oklch(0.607 0.1 200.0)",
-          "oklch(0.721 0.1 200.0)",
-          "oklch(0.836 0.1 200.0)",
-          "oklch(0.950 0.1 200.0)"
+          "oklch(15% 0.2 150)",
+          "oklch(25% 0.2 150)",
+          "oklch(35% 0.2 150)",
+          "oklch(45% 0.2 150)",
+          "oklch(55% 0.2 150)",
+          "oklch(65% 0.2 150)",
+          "oklch(80% 0.2 150)",
+          "oklch(95% 0.2 150)"
         ]
       },
-      "engine-teal-night": {
-        "role": "primary",
-        "displayName": "Night Teal",
-        "canonical": "oklch(0.72 0.11 195)",
-        "tonalRamp": [
-          "oklch(0.150 0.11 195.0)",
-          "oklch(0.264 0.11 195.0)",
-          "oklch(0.379 0.11 195.0)",
-          "oklch(0.493 0.11 195.0)",
-          "oklch(0.607 0.11 195.0)",
-          "oklch(0.721 0.11 195.0)",
-          "oklch(0.836 0.11 195.0)",
-          "oklch(0.950 0.11 195.0)"
-        ]
-      },
-      "engine-teal-ink": {
-        "role": "primary",
-        "displayName": "Teal Ink",
-        "canonical": "oklch(0.45 0.1 200)",
-        "tonalRamp": [
-          "oklch(0.150 0.1 200.0)",
-          "oklch(0.264 0.1 200.0)",
-          "oklch(0.379 0.1 200.0)",
-          "oklch(0.493 0.1 200.0)",
-          "oklch(0.607 0.1 200.0)",
-          "oklch(0.721 0.1 200.0)",
-          "oklch(0.836 0.1 200.0)",
-          "oklch(0.950 0.1 200.0)"
-        ]
-      },
-      "bay-ink": {
+      "amber": {
         "role": "secondary",
-        "displayName": "Bay Ink",
-        "canonical": "oklch(0.2 0.03 220)",
+        "displayName": "Caution Amber",
+        "canonical": "oklch(0.83 0.16 80)",
         "tonalRamp": [
-          "oklch(0.150 0.03 220.0)",
-          "oklch(0.264 0.03 220.0)",
-          "oklch(0.379 0.03 220.0)",
-          "oklch(0.493 0.03 220.0)",
-          "oklch(0.607 0.03 220.0)",
-          "oklch(0.721 0.03 220.0)",
-          "oklch(0.836 0.03 220.0)",
-          "oklch(0.950 0.03 220.0)"
+          "oklch(15% 0.16 80)",
+          "oklch(25% 0.16 80)",
+          "oklch(35% 0.16 80)",
+          "oklch(45% 0.16 80)",
+          "oklch(55% 0.16 80)",
+          "oklch(65% 0.16 80)",
+          "oklch(80% 0.16 80)",
+          "oklch(95% 0.16 80)"
         ]
       },
-      "instrument-panel": {
-        "role": "secondary",
-        "displayName": "Instrument Panel",
-        "canonical": "oklch(0.24 0.03 220)",
-        "tonalRamp": [
-          "oklch(0.150 0.03 220.0)",
-          "oklch(0.264 0.03 220.0)",
-          "oklch(0.379 0.03 220.0)",
-          "oklch(0.493 0.03 220.0)",
-          "oklch(0.607 0.03 220.0)",
-          "oklch(0.721 0.03 220.0)",
-          "oklch(0.836 0.03 220.0)",
-          "oklch(0.950 0.03 220.0)"
-        ]
-      },
-      "instrument-well": {
-        "role": "secondary",
-        "displayName": "Instrument Well",
-        "canonical": "oklch(0.19 0.03 220)",
-        "tonalRamp": [
-          "oklch(0.150 0.03 220.0)",
-          "oklch(0.264 0.03 220.0)",
-          "oklch(0.379 0.03 220.0)",
-          "oklch(0.493 0.03 220.0)",
-          "oklch(0.607 0.03 220.0)",
-          "oklch(0.721 0.03 220.0)",
-          "oklch(0.836 0.03 220.0)",
-          "oklch(0.950 0.03 220.0)"
-        ]
-      },
-      "reading-positive": {
-        "role": "tertiary",
-        "displayName": "Positive Reading",
-        "canonical": "oklch(0.84 0.14 155)",
-        "tonalRamp": [
-          "oklch(0.150 0.14 155.0)",
-          "oklch(0.264 0.14 155.0)",
-          "oklch(0.379 0.14 155.0)",
-          "oklch(0.493 0.14 155.0)",
-          "oklch(0.607 0.14 155.0)",
-          "oklch(0.721 0.14 155.0)",
-          "oklch(0.836 0.14 155.0)",
-          "oklch(0.950 0.14 155.0)"
-        ]
-      },
-      "reading-neutral": {
-        "role": "tertiary",
-        "displayName": "Neutral Reading",
-        "canonical": "oklch(0.88 0.03 220)",
-        "tonalRamp": [
-          "oklch(0.150 0.03 220.0)",
-          "oklch(0.264 0.03 220.0)",
-          "oklch(0.379 0.03 220.0)",
-          "oklch(0.493 0.03 220.0)",
-          "oklch(0.607 0.03 220.0)",
-          "oklch(0.721 0.03 220.0)",
-          "oklch(0.836 0.03 220.0)",
-          "oklch(0.950 0.03 220.0)"
-        ]
-      },
-      "reading-negative": {
-        "role": "tertiary",
-        "displayName": "Negative Reading",
-        "canonical": "oklch(0.8 0.13 25)",
-        "tonalRamp": [
-          "oklch(0.150 0.13 25.0)",
-          "oklch(0.264 0.13 25.0)",
-          "oklch(0.379 0.13 25.0)",
-          "oklch(0.493 0.13 25.0)",
-          "oklch(0.607 0.13 25.0)",
-          "oklch(0.721 0.13 25.0)",
-          "oklch(0.836 0.13 25.0)",
-          "oklch(0.950 0.13 25.0)"
-        ]
-      },
-      "reading-positive-ink": {
-        "role": "tertiary",
-        "displayName": "Positive Reading on light",
-        "canonical": "oklch(0.42 0.11 155)",
-        "tonalRamp": [
-          "oklch(0.150 0.11 155.0)",
-          "oklch(0.264 0.11 155.0)",
-          "oklch(0.379 0.11 155.0)",
-          "oklch(0.493 0.11 155.0)",
-          "oklch(0.607 0.11 155.0)",
-          "oklch(0.721 0.11 155.0)",
-          "oklch(0.836 0.11 155.0)",
-          "oklch(0.950 0.11 155.0)"
-        ]
-      },
-      "reading-neutral-ink": {
-        "role": "tertiary",
-        "displayName": "Neutral Reading on light",
-        "canonical": "oklch(0.4 0.02 220)",
-        "tonalRamp": [
-          "oklch(0.150 0.02 220.0)",
-          "oklch(0.264 0.02 220.0)",
-          "oklch(0.379 0.02 220.0)",
-          "oklch(0.493 0.02 220.0)",
-          "oklch(0.607 0.02 220.0)",
-          "oklch(0.721 0.02 220.0)",
-          "oklch(0.836 0.02 220.0)",
-          "oklch(0.950 0.02 220.0)"
-        ]
-      },
-      "reading-negative-ink": {
-        "role": "tertiary",
-        "displayName": "Negative Reading on light",
-        "canonical": "oklch(0.45 0.15 25)",
-        "tonalRamp": [
-          "oklch(0.150 0.15 25.0)",
-          "oklch(0.264 0.15 25.0)",
-          "oklch(0.379 0.15 25.0)",
-          "oklch(0.493 0.15 25.0)",
-          "oklch(0.607 0.15 25.0)",
-          "oklch(0.721 0.15 25.0)",
-          "oklch(0.836 0.15 25.0)",
-          "oklch(0.950 0.15 25.0)"
-        ]
-      },
-      "fault-red": {
+      "red": {
         "role": "tertiary",
         "displayName": "Fault Red",
-        "canonical": "oklch(0.7 0.17 25)",
+        "canonical": "oklch(0.72 0.2 28)",
         "tonalRamp": [
-          "oklch(0.150 0.17 25.0)",
-          "oklch(0.264 0.17 25.0)",
-          "oklch(0.379 0.17 25.0)",
-          "oklch(0.493 0.17 25.0)",
-          "oklch(0.607 0.17 25.0)",
-          "oklch(0.721 0.17 25.0)",
-          "oklch(0.836 0.17 25.0)",
-          "oklch(0.950 0.17 25.0)"
-        ]
-      },
-      "fault-ink": {
-        "role": "tertiary",
-        "displayName": "Fault Ink",
-        "canonical": "oklch(0.85 0.08 25)",
-        "tonalRamp": [
-          "oklch(0.150 0.08 25.0)",
-          "oklch(0.264 0.08 25.0)",
-          "oklch(0.379 0.08 25.0)",
-          "oklch(0.493 0.08 25.0)",
-          "oklch(0.607 0.08 25.0)",
-          "oklch(0.721 0.08 25.0)",
-          "oklch(0.836 0.08 25.0)",
-          "oklch(0.950 0.08 25.0)"
-        ]
-      },
-      "page-ground": {
-        "role": "neutral",
-        "displayName": "Page Ground",
-        "canonical": "oklch(0.972 0.004 210)",
-        "tonalRamp": [
-          "oklch(0.150 0.004 210.0)",
-          "oklch(0.264 0.004 210.0)",
-          "oklch(0.379 0.004 210.0)",
-          "oklch(0.493 0.004 210.0)",
-          "oklch(0.607 0.004 210.0)",
-          "oklch(0.721 0.004 210.0)",
-          "oklch(0.836 0.004 210.0)",
-          "oklch(0.950 0.004 210.0)"
-        ]
-      },
-      "page-ink": {
-        "role": "neutral",
-        "displayName": "Page Ink",
-        "canonical": "oklch(0.21 0.012 225)",
-        "tonalRamp": [
-          "oklch(0.150 0.012 225.0)",
-          "oklch(0.264 0.012 225.0)",
-          "oklch(0.379 0.012 225.0)",
-          "oklch(0.493 0.012 225.0)",
-          "oklch(0.607 0.012 225.0)",
-          "oklch(0.721 0.012 225.0)",
-          "oklch(0.836 0.012 225.0)",
-          "oklch(0.950 0.012 225.0)"
-        ]
-      },
-      "muted-ink": {
-        "role": "neutral",
-        "displayName": "Muted Ink",
-        "canonical": "oklch(0.49 0.012 220)",
-        "tonalRamp": [
-          "oklch(0.150 0.012 220.0)",
-          "oklch(0.264 0.012 220.0)",
-          "oklch(0.379 0.012 220.0)",
-          "oklch(0.493 0.012 220.0)",
-          "oklch(0.607 0.012 220.0)",
-          "oklch(0.721 0.012 220.0)",
-          "oklch(0.836 0.012 220.0)",
-          "oklch(0.950 0.012 220.0)"
-        ]
-      },
-      "surface": {
-        "role": "neutral",
-        "displayName": "Surface",
-        "canonical": "oklch(1 0 0)",
-        "tonalRamp": [
-          "oklch(0.150 0.0 0.0)",
-          "oklch(0.264 0.0 0.0)",
-          "oklch(0.379 0.0 0.0)",
-          "oklch(0.493 0.0 0.0)",
-          "oklch(0.607 0.0 0.0)",
-          "oklch(0.721 0.0 0.0)",
-          "oklch(0.836 0.0 0.0)",
-          "oklch(0.950 0.0 0.0)"
-        ]
-      },
-      "separator": {
-        "role": "neutral",
-        "displayName": "Separator",
-        "canonical": "oklch(0.915 0.006 210)",
-        "tonalRamp": [
-          "oklch(0.150 0.006 210.0)",
-          "oklch(0.264 0.006 210.0)",
-          "oklch(0.379 0.006 210.0)",
-          "oklch(0.493 0.006 210.0)",
-          "oklch(0.607 0.006 210.0)",
-          "oklch(0.721 0.006 210.0)",
-          "oklch(0.836 0.006 210.0)",
-          "oklch(0.950 0.006 210.0)"
+          "oklch(15% 0.2 28)",
+          "oklch(25% 0.2 28)",
+          "oklch(35% 0.2 28)",
+          "oklch(45% 0.2 28)",
+          "oklch(55% 0.2 28)",
+          "oklch(65% 0.2 28)",
+          "oklch(80% 0.2 28)",
+          "oklch(95% 0.2 28)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero H1 only. Archivo, semi-expanded."
+        "purpose": "Home H1 only."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section headings."
+        "purpose": "Home section headings."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Panel headings, service names."
+        "purpose": "Inner-page section headings."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Paragraphs, about 65ch."
+        "purpose": "Reading text in B612."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Placards, buttons, nav, field labels in B612 Mono uppercase."
       },
       "readout": {
         "displayName": "Readout",
-        "purpose": "Machine output only: routes, scores, ms."
+        "purpose": "Dial values in tabular mono."
       }
     },
     "shadows": [
       {
-        "name": "instrument-lift",
-        "value": "0 30px 60px -24px oklch(0.08 0.03 220 / 0.9)",
-        "purpose": "Instrument panel on Bay Ink only."
+        "name": "panel",
+        "value": "inset 0 1px 0 oklch(1 0 0 / 0.06), 0 30px 60px -28px oklch(0 0 0 / 0.9)",
+        "purpose": "Main instrument panel only."
+      },
+      {
+        "name": "radium-glow",
+        "value": "0 0 22px -6px oklch(0.88 0.2 150 / 0.65)",
+        "purpose": "Primary button; live signal."
+      },
+      {
+        "name": "needle-glow",
+        "value": "drop-shadow(0 0 3px oklch(0.88 0.2 150 / 0.8))",
+        "purpose": "Dial needles, tinted amber or red by lamp."
+      },
+      {
+        "name": "focus-ring",
+        "value": "0 0 0 3px oklch(0.88 0.2 150 / 0.25)",
+        "purpose": "Input focus."
       }
     ],
     "motion": [
       {
-        "name": "hop",
-        "value": "1.1s cubic-bezier(0.45, 0, 0.2, 1) infinite",
-        "purpose": "Pulse travelling a request hop; stagger 550ms per hop."
+        "name": "damp",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Needle settle (1.1s) and sweep-in (1.4s, 80ms stagger), motion-allowed only."
       },
       {
-        "name": "reveal",
-        "value": "420ms cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Result settling in: blur 4px to 0, rise 6px."
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "General easing token."
+      },
+      {
+        "name": "hop-blink",
+        "value": "0.8s steps(2, jump-none) infinite",
+        "purpose": "Active request hop lamp."
+      },
+      {
+        "name": "hover",
+        "value": "0.2s",
+        "purpose": "Color and border transitions."
       }
     ],
     "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "520px"
+      },
       {
         "name": "sm",
         "value": "640px"
       },
       {
-        "name": "md",
-        "value": "768px"
+        "name": "nav",
+        "value": "720px"
       },
       {
-        "name": "lg",
+        "name": "list",
+        "value": "760px"
+      },
+      {
+        "name": "annunciators",
+        "value": "820px"
+      },
+      {
+        "name": "hero",
         "value": "1024px"
       }
     ]
@@ -351,132 +257,120 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The one teal action per region.",
-      "html": "<button class=\"ds-btn-primary\">Browse dealerships</button>",
-      "css": ".ds-btn-primary{font:600 16px/1 'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif;background:oklch(0.52 0.1 200);color:#fff;border:0;border-radius:9999px;height:40px;padding:0 20px;cursor:pointer;transition:background .2s}.ds-btn-primary:hover{background:oklch(0.47 0.1 200)}.ds-btn-primary:focus-visible{outline:2px solid oklch(0.52 0.1 200);outline-offset:2px}"
+      "description": "Radium lit action; one per view.",
+      "html": "<button class=\"ds-btn-primary\">Browse dealers</button>",
+      "css": ".ds-btn-primary{font:700 0.8rem 'B612 Mono',ui-monospace,Consolas,monospace;letter-spacing:0.1em;text-transform:uppercase;min-height:2.9rem;padding:0 1.4rem;border-radius:4px;display:inline-flex;align-items:center;cursor:pointer;transition:border-color .2s,color .2s,background-color .2s,box-shadow .3s;background:oklch(0.88 0.2 150);color:oklch(0.1 0.006 250);border:1px solid oklch(0.88 0.2 150);box-shadow:0 0 22px -6px oklch(0.88 0.2 150 / .65)}.ds-btn-primary:hover{background:oklch(0.93 0.18 150);border-color:oklch(0.93 0.18 150);box-shadow:0 0 28px -4px oklch(0.88 0.2 150 / .8)}.ds-btn-primary:focus-visible{outline:2px solid oklch(0.88 0.2 150);outline-offset:3px}"
     },
     {
-      "name": "Outline Button on Dark",
+      "name": "Ghost Button",
       "kind": "button",
-      "refersTo": "button-outline-on-dark",
-      "description": "Secondary action on Bay Ink.",
-      "html": "<div style=\"background:oklch(0.2 0.03 220);padding:16px\"><button class=\"ds-btn-outline-dark\">Create an account</button></div>",
-      "css": ".ds-btn-outline-dark{font:600 16px/1 'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif;background:transparent;color:#fff;border:1px solid rgb(255 255 255/.4);border-radius:9999px;height:40px;padding:0 20px;cursor:pointer;transition:background .2s}.ds-btn-outline-dark:hover{background:rgb(255 255 255/.1)}.ds-btn-outline-dark:focus-visible{outline:2px solid oklch(0.52 0.1 200);outline-offset:2px}"
+      "refersTo": "button-ghost",
+      "description": "Secondary action with a muted outline.",
+      "html": "<button class=\"ds-btn-ghost\">Sign in</button>",
+      "css": ".ds-btn-ghost{font:700 0.8rem 'B612 Mono',ui-monospace,Consolas,monospace;letter-spacing:0.1em;text-transform:uppercase;min-height:2.9rem;padding:0 1.4rem;border-radius:4px;display:inline-flex;align-items:center;cursor:pointer;transition:border-color .2s,color .2s,background-color .2s,box-shadow .3s;background:transparent;color:oklch(0.95 0.005 250);border:1px solid oklch(0.74 0.01 250)}.ds-btn-ghost:hover{border-color:oklch(0.95 0.005 250);background:oklch(1 0 0 / .05)}.ds-btn-ghost:focus-visible{outline:2px solid oklch(0.88 0.2 150);outline-offset:3px}"
     },
     {
-      "name": "Instrument Field",
+      "name": "Text Input",
       "kind": "input",
-      "refersTo": "instrument-field",
-      "description": "Text input recessed into an instrument panel.",
-      "html": "<div style=\"background:oklch(0.24 0.03 220);padding:16px\"><textarea class=\"ds-instrument-field\" rows=\"3\">The finance guy was pushy, but the service team was great.</textarea></div>",
-      "css": ".ds-instrument-field{display:block;width:100%;resize:none;font:15px/1.6 'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif;color:#fff;background:oklch(0.19 0.03 220);border:1px solid rgb(255 255 255/.15);border-radius:12px;padding:12px 16px;caret-color:oklch(0.52 0.1 200)}.ds-instrument-field:focus{outline:none;border-color:oklch(0.52 0.1 200);box-shadow:0 0 0 2px oklch(0.52 0.1 200/.5)}"
+      "refersTo": "input",
+      "description": "Recessed dial-face field with a placard label.",
+      "html": "<label class=\"ds-label\" for=\"ds-i\">Review text</label><input id=\"ds-i\" class=\"ds-input\" placeholder=\"Type here\">",
+      "css": ".ds-label{display:block;margin-bottom:.4rem;font:700 .72rem 'B612 Mono',ui-monospace,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.74 0.01 250)}.ds-input{min-height:2.9rem;padding:.6rem .85rem;background:oklch(0.1 0.006 250);color:oklch(0.95 0.005 250);caret-color:oklch(0.88 0.2 150);border:1px solid oklch(0.34 0.012 250);border-radius:4px;transition:border-color .2s,box-shadow .2s}.ds-input::placeholder{color:oklch(0.6 0.01 250)}.ds-input:focus{outline:none;border-color:oklch(0.88 0.2 150);box-shadow:0 0 0 3px oklch(0.88 0.2 150 / .25)}"
     },
     {
-      "name": "Example Chip",
-      "kind": "chip",
-      "refersTo": "example-chip",
-      "description": "One-tap preset; selected uses the teal wash.",
-      "html": "<div style=\"background:oklch(0.24 0.03 220);padding:16px;display:flex;gap:8px\"><button class=\"ds-chip\">Happy buyer</button><button class=\"ds-chip\" aria-pressed=\"true\">Mixed visit</button></div>",
-      "css": ".ds-chip{font:12px/1.4 'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif;color:rgb(255 255 255/.85);background:transparent;border:1px solid rgb(255 255 255/.15);border-radius:9999px;padding:4px 12px;cursor:pointer;transition:border-color .2s,color .2s}.ds-chip:hover{border-color:rgb(255 255 255/.35);color:#fff}.ds-chip[aria-pressed=true]{border-color:oklch(0.52 0.1 200);background:oklch(0.52 0.1 200/.15);color:#fff}.ds-chip:focus-visible{outline:2px solid oklch(0.52 0.1 200);outline-offset:2px}"
-    },
-    {
-      "name": "Hop Path",
-      "kind": "custom",
-      "refersTo": "instrument",
-      "description": "Request path: done, done, failed.",
-      "html": "<div class=\"ds-hops\"><div class=\"ds-hops-row\"><span class=\"ds-dot ds-done\"></span><span class=\"ds-line ds-lit\"></span><span class=\"ds-dot ds-done\"></span><span class=\"ds-line ds-fault\"></span><span class=\"ds-dot ds-failed\"></span></div><div class=\"ds-hops-labels\"><span>Your browser<i>React</i></span><span>Django<i>/djangoapp/analyze</i></span><span class=\"ds-fail-label\">Flask · VADER<i>/analyze</i></span></div></div>",
-      "css": ".ds-hops{background:oklch(0.24 0.03 220);padding:20px;font:500 12px/1.4 'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif;color:#fff}.ds-hops-row{display:flex;align-items:center}.ds-dot{width:12px;height:12px;border-radius:50%;flex:none}.ds-done{background:oklch(0.52 0.1 200)}.ds-failed{background:oklch(0.7 0.17 25)}.ds-line{flex:1;height:1px;margin:0 4px;background:rgb(255 255 255/.15)}.ds-lit{background:oklch(0.52 0.1 200/.7)}.ds-fault{background:repeating-linear-gradient(90deg,oklch(0.7 0.17 25) 0 4px,transparent 4px 8px)}.ds-hops-labels{display:grid;grid-template-columns:repeat(3,1fr);margin-top:12px}.ds-hops-labels span:nth-child(2){text-align:center}.ds-hops-labels span:nth-child(3){text-align:right}.ds-hops-labels i{display:block;font:400 12px 'Martian Mono Variable', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;font-style:normal;color:rgb(255 255 255/.6)}.ds-fail-label{color:oklch(0.8 0.13 25)}"
-    },
-    {
-      "name": "Sentiment Reading",
-      "kind": "custom",
-      "refersTo": "instrument",
-      "description": "Computed result with meter and readouts.",
-      "html": "<div class=\"ds-reading\"><div class=\"ds-reading-top\"><b>Positive</b><code>score +0.73</code></div><div class=\"ds-meter\"><span class=\"ds-band\"></span><span class=\"ds-mark\"></span></div><code class=\"ds-small\">words: 35% positive · 56% neutral · 10% negative</code><code class=\"ds-small\">Django → Flask 11 ms · round trip 36 ms</code></div>",
-      "css": ".ds-reading{background:oklch(0.24 0.03 220);padding:20px;color:#fff;font-family:'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif}.ds-reading-top{display:flex;justify-content:space-between;align-items:baseline}.ds-reading b{font-size:30px;font-weight:600;letter-spacing:-.025em;color:oklch(0.84 0.14 155)}.ds-reading code{font:14px 'Martian Mono Variable', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;color:rgb(255 255 255/.8)}.ds-meter{position:relative;height:8px;border-radius:9999px;background:rgb(255 255 255/.1);margin:20px 0 12px}.ds-band{position:absolute;left:47.5%;width:5%;top:0;bottom:0;background:rgb(255 255 255/.2)}.ds-mark{position:absolute;left:86.5%;top:50%;width:14px;height:14px;transform:translate(-50%,-50%);border-radius:50%;background:oklch(0.84 0.14 155);box-shadow:0 0 0 4px oklch(0.24 0.03 220)}.ds-reading .ds-small{display:block;font-size:12px;color:rgb(255 255 255/.6);margin-top:4px}"
-    },
-    {
-      "name": "Instrument Panel",
-      "kind": "card",
-      "refersTo": "instrument",
-      "description": "The raised panel on Bay Ink.",
-      "html": "<div style=\"background:oklch(0.2 0.03 220);padding:32px\"><section class=\"ds-instrument\"><header><h3>Sentiment analyzer</h3><code>NLTK VADER</code></header><p>The same model that labels every review on this site.</p></section></div>",
-      "css": ".ds-instrument{background:oklch(0.24 0.03 220);border:1px solid rgb(255 255 255/.12);border-radius:16px;padding:28px;box-shadow:0 30px 60px -24px oklch(0.08 0.03 220/.9);color:#fff;font-family:'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif}.ds-instrument header{display:flex;justify-content:space-between;align-items:baseline}.ds-instrument h3{margin:0;font-size:18px;font-weight:600;letter-spacing:-.025em}.ds-instrument code{font:12px 'Martian Mono Variable', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;color:rgb(255 255 255/.6)}.ds-instrument p{margin:4px 0 0;font-size:14px;color:rgb(255 255 255/.7)}"
-    },
-    {
-      "name": "CTA Band",
-      "kind": "card",
-      "refersTo": "cta-band",
-      "description": "Closing call to action.",
-      "html": "<div class=\"ds-cta\"><div><h3>Every label here was computed, not chosen.</h3><p>Open any dealership to read its reviews and see what the model made of them.</p></div><button>Browse dealerships</button></div>",
-      "css": ".ds-cta{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;background:oklch(0.52 0.1 200);color:#fff;border-radius:24px;padding:48px 32px;font-family:'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif}.ds-cta h3{margin:0;font-size:24px;font-weight:600;letter-spacing:-.025em}.ds-cta p{margin:8px 0 0}.ds-cta button{font:600 16px/1 'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif;background:#fff;color:oklch(0.25 0.05 200);border:0;border-radius:9999px;height:44px;padding:0 24px;cursor:pointer}.ds-cta button:focus-visible{outline:2px solid #fff;outline-offset:2px}"
-    },
-    {
-      "name": "Site Navigation",
+      "name": "Nav",
       "kind": "nav",
-      "refersTo": "",
-      "description": "Sticky top bar (desktop links).",
-      "html": "<nav class=\"ds-nav\"><b>Dealerships</b><a href=\"#\">Dealers</a><a href=\"#\">About us</a><a href=\"#\">Contact</a><span></span><a href=\"#\">Log in</a><button>Register</button></nav>",
-      "css": ".ds-nav{display:flex;align-items:center;gap:20px;height:64px;padding:0 24px;background:oklch(97.02% 0 0/.85);backdrop-filter:blur(8px);border-bottom:1px solid oklch(92% .004 286.32);font:14px 'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif;color:oklch(21.03% .0059 285.89)}.ds-nav b{font-size:18px;font-weight:600;letter-spacing:-.025em}.ds-nav span{flex:1}.ds-nav a{color:inherit;text-decoration:none}.ds-nav a:hover{text-decoration:underline;text-underline-offset:4px}.ds-nav a:focus-visible{outline:2px solid oklch(0.52 0.1 200);outline-offset:2px}.ds-nav button{font:600 14px 'Archivo Variable', -apple-system, 'Segoe UI', Roboto, sans-serif;background:oklch(0.52 0.1 200);color:#fff;border:0;border-radius:9999px;height:32px;padding:0 14px}"
+      "refersTo": "button-ghost",
+      "description": "Mono uppercase links; current page is radium with an inset underline.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Dealers</a><a href=\"#\" aria-current=\"page\">Home</a></nav>",
+      "css": ".ds-nav{display:flex;gap:.25rem}.ds-nav a{display:inline-flex;align-items:center;min-height:2.5rem;padding:0 .85rem;color:oklch(0.74 0.01 250);text-decoration:none;font:700 .74rem 'B612 Mono',ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;border-radius:4px;transition:color .2s,background-color .2s}.ds-nav a:hover{color:oklch(0.95 0.005 250);background:oklch(0.175 0.01 250)}.ds-nav a[aria-current=page]{color:oklch(0.88 0.2 150);box-shadow:inset 0 -2px 0 oklch(0.88 0.2 150);border-radius:0}.ds-nav a:focus-visible{outline:2px solid oklch(0.88 0.2 150);outline-offset:3px}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Pill toggle for sample reviews; pressed is radium.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"true\">Positive</button>",
+      "css": ".ds-chip{min-height:2.2rem;padding:0 .85rem;background:transparent;color:oklch(0.74 0.01 250);border:1px solid oklch(0.34 0.012 250);border-radius:99px;font:700 .72rem 'B612 Mono',ui-monospace,Consolas,monospace;letter-spacing:.06em;cursor:pointer;transition:color .2s,border-color .2s}.ds-chip:hover{color:oklch(0.95 0.005 250);border-color:oklch(0.74 0.01 250)}.ds-chip[aria-pressed=true]{color:oklch(0.88 0.2 150);border-color:oklch(0.88 0.2 150);background:oklch(0.88 0.2 150 / .1)}.ds-chip:focus-visible{outline:2px solid oklch(0.88 0.2 150);outline-offset:3px}"
+    },
+    {
+      "name": "Annunciator Review Card",
+      "kind": "card",
+      "refersTo": "review-card",
+      "description": "Panel card with a sentiment-colored top rule and mark.",
+      "html": "<article class=\"ds-card\"><span class=\"ds-mark\">Negative <i>-0.62</i></span><p>Waited three hours for a simple oil change.</p></article>",
+      "css": ".ds-card{display:grid;gap:.9rem;padding:1.25rem;background:oklch(0.175 0.01 250);color:oklch(0.95 0.005 250);border:1px solid oklch(0.34 0.012 250);border-top:2px solid oklch(0.72 0.2 28);border-radius:6px;width:20rem}.ds-card p{margin:0;line-height:1.6}.ds-mark{font:700 .76rem 'B612 Mono',ui-monospace,Consolas,monospace;letter-spacing:.1em;text-transform:uppercase;color:oklch(0.72 0.2 28)}.ds-mark i{font-style:normal;font-weight:400;color:oklch(0.74 0.01 250);letter-spacing:0}"
+    },
+    {
+      "name": "Dial",
+      "kind": "custom",
+      "refersTo": "panel",
+      "description": "Round instrument with ticks, radium needle, and mono readout. Amber at caution, red at fail.",
+      "html": "<figure class=\"ds-dial\"><svg viewBox=\"0 0 100 100\" width=\"120\" height=\"120\"><circle cx=\"50\" cy=\"50\" r=\"48\" class=\"ds-bezel\"/><circle cx=\"50\" cy=\"50\" r=\"43\" class=\"ds-face\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"18\" class=\"ds-tick\" transform=\"rotate(-60 50 50)\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"18\" class=\"ds-tick\"/><line x1=\"50\" y1=\"10\" x2=\"50\" y2=\"18\" class=\"ds-tick\" transform=\"rotate(60 50 50)\"/><polygon class=\"ds-needle\" points=\"50,16 52,50 48,50\"/><circle cx=\"50\" cy=\"50\" r=\"4\" class=\"ds-hub\"/></svg><figcaption><b class=\"ds-readout\">42 ms</b><span class=\"ds-sub\">Sentiment</span></figcaption></figure>",
+      "css": ".ds-dial{margin:0;display:grid;gap:.5rem;justify-items:center;text-align:center;width:120px}.ds-bezel{fill:oklch(0.22 0.01 250);stroke:oklch(0.34 0.012 250)}.ds-face{fill:oklch(0.1 0.006 250)}.ds-tick{stroke:oklch(0.95 0.005 250);stroke-width:2.2}.ds-needle{fill:oklch(0.88 0.2 150);filter:drop-shadow(0 0 3px oklch(0.88 0.2 150 / .8));transform-origin:50px 50px;transform:rotate(25deg);transition:transform 1.1s cubic-bezier(.22,1,.36,1)}.ds-hub{fill:oklch(0.22 0.01 250);stroke:oklch(0.95 0.005 250);stroke-width:1.5}.ds-readout{display:block;font:700 1.15rem 'B612 Mono',ui-monospace,Consolas,monospace;color:oklch(0.95 0.005 250)}.ds-sub{font:400 .72rem 'B612 Mono',ui-monospace,Consolas,monospace;color:oklch(0.74 0.01 250)}"
+    },
+    {
+      "name": "Hop Lamps",
+      "kind": "custom",
+      "refersTo": "panel",
+      "description": "Request-path lamps: done is lit radium, active blinks amber, failed is red.",
+      "html": "<ul class=\"ds-hops\"><li data-state=\"done\"><i></i>React</li><li data-state=\"active\"><i></i>Django</li><li><i></i>Flask</li></ul>",
+      "css": ".ds-hops{display:flex;gap:.25rem 1rem;list-style:none;margin:0;padding:0;font:400 .74rem 'B612 Mono',ui-monospace,Consolas,monospace;color:oklch(0.74 0.01 250)}.ds-hops li{display:inline-flex;align-items:center;gap:.4rem}.ds-hops i{width:.55rem;height:.55rem;border-radius:50%;border:1px solid oklch(0.74 0.01 250)}.ds-hops [data-state=done]{color:oklch(0.95 0.005 250)}.ds-hops [data-state=done] i{background:oklch(0.88 0.2 150);border-color:oklch(0.88 0.2 150);box-shadow:0 0 6px oklch(0.88 0.2 150)}.ds-hops [data-state=active] i{background:oklch(0.83 0.16 80);border-color:oklch(0.83 0.16 80);animation:ds-blink .8s steps(2,jump-none) infinite}@keyframes ds-blink{50%{opacity:.25}}"
     }
   ],
   "narrative": {
-    "northStar": "The Open Engine Bay",
-    "overview": "The hood is up. Dealerships is a review site, but what sets it apart is the machinery underneath: four services, real routes, and a sentiment model reading every review. The visual system treats that machinery as something to show off, not hide. Calm, light pages carry the everyday reading and browsing. When the product shows the system working, it opens the bay: a dark blue-teal ground, an instrument panel, a live status strip, and monospaced readouts of routes, scores and timings that come from the live request.\n\nIts tone is confident and factual. Every number on screen is measured or fetched, never claimed. Outages are named, with what the visitor loses and a way to check again. Known limits of the model are stated where they show up, not hidden. Motion is reserved for the request itself: a pulse travelling along a hop, and a result settling into place.\n\nTwo typefaces carry the split between people and machine: Archivo, set slightly wide for display like an automotive spec sheet, and Martian Mono, condensed, for anything a machine produced.",
+    "northStar": "The Night Flight Instrument Cluster",
+    "overview": "A matte-black cockpit panel at night. Markings are luminous white, the one lit accent is radium green, and amber and red lamps come on only when something deviates. Every number on the site is meant to be read off a live service, so the UI is built from dials with tick scales, hairline-ruled panels, and small mono uppercase placards, not from a generic grid of cards.\n\nThe density is calm and instrument-like: lots of black ground, thin lines instead of fills, light used as signal. Text is B612 (a cockpit-legibility face) for reading and B612 Mono for anything that is a reading, a label, or a path. The theme lives in `src/theme/theme.css` over the shared `x-` class contract in `src/core/shared.css`.",
     "keyCharacteristics": [
-      "Light, quiet reading pages; a dark instrument wherever the system works in public.",
-      "One accent, Engine Teal, re-tuned per ground: Night Teal on dark, Teal Ink for text on light.",
-      "Archivo for people, Martian Mono for machine output: routes, scores, timings, counts.",
-      "Honest states: offline services, failed hops and stale results are named, with a way to recover.",
-      "Pill-shaped controls, softly rounded containers, no hard edges."
+      "Dark only (`color-scheme: dark`), matte ground, no gradients on surfaces.",
+      "One lit accent (radium) plus two deviation lamps (amber, red).",
+      "Round SVG dials with major and minor ticks and damped needles.",
+      "Hairline borders define structure; fills stay within three near-black steps.",
+      "Mono uppercase placards for labels, buttons, nav, and status."
     ],
     "rules": [
       {
-        "name": "The One Voice Rule",
-        "body": "Teal is the only interactive colour. A teal element either acts or traces a live request.",
+        "name": "The Lamp Rule",
+        "body": "Amber and red appear only when something deviates (caution, fault, negative, error). They are never decoration, and a healthy screen has none.",
         "section": "colors"
       },
       {
-        "name": "The Readings Are Data Rule",
-        "body": "Sentiment colours appear only next to a computed sentiment, never as decoration, status, section tint or brand accent. Service status uses teal (up) and Fault Red (down).",
+        "name": "The One Lit Accent Rule",
+        "body": "Radium is the only chromatic color at rest. Anything glowing is radium, amber, or red, and it glows because it is a live signal.",
         "section": "colors"
       },
       {
-        "name": "The Ground Decides Rule",
-        "body": "Pick the accent variant from the ground: Night Teal in the bay, Teal Ink for text on light, Engine Teal for fills on light.",
+        "name": "The Hairline Rule",
+        "body": "Structure comes from 1px `line` borders, not fills or heavy shadows. Sentiment cards add a 2px top rule in the sentiment color.",
         "section": "colors"
       },
       {
-        "name": "The Machine Voice Rule",
-        "body": "Monospace is for things a machine produced or addresses: routes, payloads, scores, milliseconds. Never use it for headings, buttons or marketing copy.",
+        "name": "The Mono-Is-A-Reading Rule",
+        "body": "Mono type is reserved for values, labels, buttons, nav, and paths. Prose is always B612 sans in sentence case.",
         "section": "typography"
       },
       {
-        "name": "The Spec Sheet Rule",
-        "body": "Display and headline type is semi-expanded (112.5%) with tight tracking (-0.025em). Hierarchy comes from size, width and weight, never from colour or gradient text.",
-        "section": "typography"
-      },
-      {
-        "name": "The Lit Bay Rule",
-        "body": "Shadows that read as shadows exist only in the dark engine bay. Light pages get depth from tone and hairlines.",
+        "name": "The Glow-Means-Live Rule",
+        "body": "A glow marks a live or lit element (needle, lamp, positive or negative marker, primary action). Never glow a passive surface.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** show live system output (routes, scores, ms) in the Readout mono with tabular numerals.",
-      "**Do** name the failing service, say what the visitor loses, and offer a retry. Never let a block silently disappear.",
-      "**Do** use the Instrument language (Bay Ink, `bay` class, Instrument Panel, hop path) whenever a page demonstrates a mechanism.",
-      "**Do** use `text-balance` and the semi-expanded width on every display and headline.",
-      "**Do** state a model's known limits where they show up.",
-      "**Do** label demonstration text as sample text; every number must come from the API."
+      "Do keep the ground at `colors.ground`, raised surfaces at `colors.panel`, recessed inputs and dial faces at `colors.face`.",
+      "Do draw structure with 1px `colors.line` borders.",
+      "Do reserve radium for live or actionable signals, and amber or red for deviation only.",
+      "Do set values, labels, buttons, and nav in B612 Mono uppercase with tracking; set prose in B612.",
+      "Do source every displayed number from a live service and show a failure as a fault lamp or red needle, not a hidden dial.",
+      "Do respect reduced motion: the needle sweep is gated behind `prefers-reduced-motion: no-preference`.",
+      "Do keep touch targets at least 2.5rem."
     ],
     "donts": [
-      "**Don't** use sentiment colours outside a computed reading, including for service status.",
-      "**Don't** use monospace for headings, buttons, or anything a person says.",
-      "**Don't** add eyebrow chips or kickers above headings.",
-      "**Don't** use Engine Teal for text on light grounds (use Teal Ink) or on dark grounds (use Night Teal via `bay`).",
-      "**Don't** use stock car photos or placeholder silhouettes to fill space. A demonstration of the product beats a picture of a car.",
-      "**Don't** use gradient text, glass decoration, or hard offset shadows."
+      "Don't use amber or red decoratively on a healthy screen.",
+      "Don't add a second lit accent hue; there is one radium.",
+      "Don't make passive surfaces glow or give cards drop shadows.",
+      "Don't introduce a light theme or gradient fills on surfaces.",
+      "Don't render dealers as a generic card grid; the list is ruled rows.",
+      "Don't show ratings, star scores, or invented figures; sentiment is computed text, per PRODUCT.md."
     ]
   }
 }

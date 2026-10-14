@@ -30,7 +30,7 @@ The app is made of four services:
 
 | Service | Location | Stack | Purpose |
 | --- | --- | --- | --- |
-| Frontend | [server/frontend](server/frontend) | React 19, React Router, HeroUI, Tailwind CSS v4, Bootstrap | Single-page UI, built into static files that Django serves |
+| Frontend | [server/frontend](server/frontend) | React 19, React Router, plain CSS (Night Flight theme) | Single-page UI, built into static files that Django serves |
 | Django app | [server](server) | Django, SQLite, gunicorn | Users and sessions, car makes/models, proxy API to the other services |
 | Dealer/review API | [server/database](server/database) | Node.js, Express, Mongoose, MongoDB | Stores dealerships and reviews, seeded from JSON on startup |
 | Sentiment analyzer | [server/djangoapp/microservices](server/djangoapp/microservices) | Flask, NLTK VADER | Classifies review text as positive, neutral or negative |
