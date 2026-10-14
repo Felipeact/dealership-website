@@ -1,7 +1,7 @@
 FROM node:20-slim AS frontend
 WORKDIR /frontend
 COPY server/frontend/package*.json ./
-RUN npm ci
+RUN npm install -g npm@11 && npm ci
 COPY server/frontend/ ./
 RUN npm run build
 
